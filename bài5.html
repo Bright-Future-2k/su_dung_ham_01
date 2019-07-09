@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="nhap" type="text">
+<button type="button" onclick="change()">onclick</button>
+<script>
+    function change() {
+        let name = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+        let cung = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+        let seach = document.getElementById("nhap").value;
+        for (a = 0; a < name.length; a++) {
+            if (seach == name[a]) {
+                alert(cung[a]);
+            }
+        }
+    }
+</script>
+</body>
+</html>
